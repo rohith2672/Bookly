@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Bookfrag"
+        android:icon="@drawable/booksicon"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/booklend"
+        android:icon="@drawable/booklend"
+        android:title="Lend"/>
+
+    <item
+        android:id="@+id/bookreturn"
+        android:icon="@drawable/bookreturn"
+        android:title="Return"/>
+
+    <item
+        android:id="@+id/transactions"
+        android:icon="@drawable/transaction_icon"
+        android:title="Transactions"/>
+</menu>

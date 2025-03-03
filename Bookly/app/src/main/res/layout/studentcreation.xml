@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/Sname"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/righteous"
+        android:hint="Student Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/SFname"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/righteous"
+        android:hint="Father Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sname" />
+
+    <EditText
+        android:id="@+id/Sphoneno"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/righteous"
+        android:hint="Phone number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sPassword" />
+
+    <EditText
+        android:id="@+id/Srollno"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/righteous"
+        android:hint="Rollno"
+        android:inputType="textPersonName"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SFname" />
+
+    <Spinner
+        android:id="@+id/spindept"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:padding="10dp"
+        android:layout_marginTop="24dp"
+        android:elevation="10dp"
+        android:background="@drawable/admin_log_signupbg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sphoneno" />
+
+    <Spinner
+        android:id="@+id/spinyear"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="140dp"
+        android:elevation="10dp"
+        android:background="@drawable/admin_log_signupbg"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sphoneno" />
+
+    <Button
+        android:id="@+id/Ssave"
+        android:layout_width="97dp"
+        android:background="@drawable/admin_log_signupbg"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/righteous"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spindept" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/righteous"
+        android:text="Student Creation:"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/supdate"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/admin_log_signupbg"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/righteous"
+        android:text="Update"
+        app:layout_constraintStart_toEndOf="@+id/Ssave"
+        app:layout_constraintTop_toBottomOf="@+id/spinyear" />
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="71dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/admin_log_signupbg"
+        android:fontFamily="@font/righteous"
+        android:text="Get"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toEndOf="@+id/Srollno"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sdelete"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:background="@drawable/admin_log_signupbg"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/righteous"
+        android:text="Delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ssave"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/sPassword"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/righteous"
+        android:hint="Student password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Srollno" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
